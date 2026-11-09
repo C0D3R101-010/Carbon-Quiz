@@ -1,0 +1,100 @@
+<!Doctype HTML>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+	<title>Carbon Footprint Score Quiz</title>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap5@1.1.9/src/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='styles.css'>
+	<script src='https://cdn.jsdelivr.net/npm/eruda'></script>
+	<script>eruda.init();</script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js' defer></script>
+	<script src='script.js' defer></script>
+</head>
+
+<body>
+	<form id='transForm'>
+		<label for='trans'>What is your main form of transport?</label>
+		<br>
+		<select id='trans'>
+			<option value='21'>Car</option>
+			<option value='17'>Motorbike</option>
+			<option value='14'>Carpooling</option>
+			<option value='10'>Public Transport</option>
+			<option value='5'>Walk/Bike</option>
+		</select>
+		<br>
+		<button type='submit'>Submit</button>
+	</form>
+	
+	<form id='fuelForm'>
+		<label for='fuel'>If using a personal vehicle, what fuel does it use?</label>
+		<br>
+		<select id='fuel'>
+			<option value='5'>I don't use one</option>
+			<option value='6'>Electric</option>
+			<option value='13'>Gasoline</option>
+			<option value='18'>Diesel</option>
+		</select>
+		<br>
+		<button type='submit'>Submit</button>
+	</form>
+	
+	<form id='adulForm'>
+		<label for='adul'>How many adults live in your home?</label>
+		<br>
+		<input type='text' id='adul' placeholder='Enter a number'>
+		<br>
+		<button type='submit'>Submit</button>
+	</form>
+	
+	<form id='chilForm'>
+		<label for='chil'>How many children live in your home?</label>
+		<br>
+		<input type='text' id='chil' placeholder='Enter a number'>
+		<br>
+		<button type='submit'>Submit</button>
+	</form>
+	
+	<form id='grenForm'>
+		<label for='gren'>Do you use renewable energy?  Select all that apply.</label>
+		<br>
+		<select id='gren' multiple size='4'>
+			<option>Solar</option>
+			<option>Wind</option>
+			<option>Hydro</option>
+			<option>Geothermal</option>
+		</select>
+		<br>
+		<button type='submit'>Submit</button>
+	</form>
+	
+	<form id='meatForm'>
+		<label for='meat'>How often do you eat beef?</label>
+		<br>
+		<select id='meat'>
+			<option value='8'>Every meal</option>
+			<option value='5'>Some meals</option>
+			<option value='0'>Never</option>
+		</select>
+		<br>
+		<button type='submit'>Submit</button>
+	</form>
+	
+	<form id='wastForm'>
+		<label for='wast'>Do you recycle?</label>
+		<br>
+		<select id='wast'>
+			<option value='0'>Yes</option>
+			<option value='5'>No</option>
+		</select>
+		<br>
+		<button type='submit'>Submit</button>
+	</form>
+	
+	<div id='sctxt'></div>
+
+</body>
+
+</html>
